@@ -1,12 +1,17 @@
 #include <stdio.h>
-int main(void){
+void f(void);
+int i;
+int main(void)
+{
+for ( i=0; i<5; i++ )
+{
+f();
+}
+	return 0;
+}
+void f(void)
+{
 	int i;
-	
-	for (i=0;i<5;i++){
-		
-		int temp = 1;
-		printf("temp = %d\n", temp);
-		temp++;
-	}
-return 0;
+	for ( i=0; i<10; i++)
+	printf("#");
 }
